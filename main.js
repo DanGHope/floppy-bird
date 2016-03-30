@@ -15,8 +15,8 @@ var stage = new PIXI.Container();
 
 // image loader
 var loader = new PIXI.loaders.Loader();
-loader.add('bird1', '../images/bird-1.png');
-loader.add('bird2', '../images/bird-2.png');
+loader.add('bird1', 'images/bird-1.png');
+loader.add('bird2', 'images/bird-2.png');
 //loading message
 loader.on('loading',console.log('Loading'));
 //once items are loaded start
@@ -33,8 +33,8 @@ var delta;
 var bird;
 //frame images
 var FRAMES = [
-  '../images/bird-1.png',
-  '../images/bird-2.png'
+  'images/bird-1.png',
+  'images/bird-2.png'
 ];
 //current frame
 var frameindex;
