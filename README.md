@@ -1,2 +1,2 @@
 # floppy-bird
-Sample JS Project
+Sample Javascript game using PixiJS
