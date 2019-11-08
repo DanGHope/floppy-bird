@@ -275,15 +275,9 @@ function keyboard(keyCode) {
   window.addEventListener(
     'keyup', key.upHandler.bind(key), false
   );
-  window.addEventListener('touchstart', function() {
-  if (key.isUp && key.press) key.press();
-      key.isDown = true;
-      key.isUp = false;
-  });
-  window.addEventListener('touchend', function() {
-  if (key.isDown && key.release) key.release();
-      key.isDown = false;
-      key.isUp = true;
-  });
   return key;
 }
+
+window.addEventListener('touchstart', function() {
+  ySpeed= -4;
+ });
